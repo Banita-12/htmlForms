@@ -20,5 +20,6 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('htmlforms/',htmlforms,name='htmlforms')
+    path('htmlforms/',htmlforms,name='htmlforms'),
+    path('create_school/',create_school,name='create_school')
 ]
