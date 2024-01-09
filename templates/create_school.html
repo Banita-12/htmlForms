@@ -7,22 +7,14 @@
 </head>
 <body>
     <center>
-        <h1>School Html form</h1>
+        <h1>School Django form</h1>
 
         <form method="POST">
             {% csrf_token %}
 
-            <label for="sn">School Name</label>
-            <input type="text" name="sn" id="sn"><br><br>
-
-            <label for="sl">Location</label>
-            <input type="text" name="sl" id="sl"><br><br>
-
-            <label for="sp">Principal</label>
-            <input type="text" name="sp" id="sp"><br><br>
+            {{ESFO.as_p}}
 
             <input type="submit">
-
 
         </form>
     </center>
